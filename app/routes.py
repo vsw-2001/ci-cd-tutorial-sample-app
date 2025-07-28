@@ -11,7 +11,7 @@ def home():
 def menu():
     today = Menu.query.first()
     if today:
-        body = { "today_special": today.name }
+        body = { "today we have an inclass": today.name }
         status = 200
     else:
         body = { "error": "Sorry, the service is not available today." }
